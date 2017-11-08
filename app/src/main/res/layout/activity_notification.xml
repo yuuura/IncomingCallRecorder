@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yuuura87.callrecorder.NotificationActivity">
+
+    <TextView
+        android:id="@+id/txtNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable notifications"
+        android:textSize="24sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Switch
+        android:id="@+id/switchNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignBottom="@+id/txtNotif"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp" />
+
+    <TextView
+        android:id="@+id/txtRemind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtNotif"
+        android:layout_below="@+id/txtNotif"
+        android:layout_marginTop="69dp"
+        android:text="Remind me daily at"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtRemind"
+        android:layout_alignEnd="@+id/switchNotif"
+        android:text="Set time" />
+
+</RelativeLayout>

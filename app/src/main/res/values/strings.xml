@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CallRecorder</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="export_to_email">Export to email</string>
+    <string name="delete_row">Delete Record</string>
+    <string name="reply_via_dialer">Reply via dialer</string>
+    <string name="reply_via_message">Reply via message</string>
+</resources>

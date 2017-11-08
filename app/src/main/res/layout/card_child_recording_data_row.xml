@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    android:elevation="3dp"
+    card_view:cardCornerRadius="0dp"
+    android:paddingBottom="12dp"
+    android:paddingTop="12dp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <RelativeLayout
+            android:id="@+id/details_section"
+            android:layout_width="match_parent"
+            android:layout_height="72dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/avatar"
+                android:src="@drawable/ic_child_recording_avatar_unselected"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:scaleType="center"
+                android:layout_centerVertical="true"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="72dp"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/caller"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Caller Name"
+                    android:gravity="right" />
+
+                <TextView
+                    android:id="@+id/route"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Call, "
+                    android:textSize="14sp"
+                    android:textColor="@color/colorSecondaryText"
+                    android:layout_below="@+id/caller"
+                    android:layout_marginTop="1dp"/>
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 days ago"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorSecondaryText"
+                    android:layout_toRightOf="@id/route"
+                    android:layout_below="@id/caller"
+                    android:layout_marginTop="1dp"/>
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:src="@drawable/ic_delete_black_24dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/contact_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDivider"/>
+
+        <RelativeLayout
+            android:id="@+id/message_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:id="@+id/message"
+                android:padding="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:text="text"/>
+                <!--android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."/>
+-->
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/message_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorDivider"/>
+
+        <RelativeLayout
+            android:id="@+id/dial_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btn_dial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_phone_accent_24dp"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:padding="16dp"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:id="@+id/dial_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reply_via_dialer"
+                android:layout_toRightOf="@+id/btn_dial"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/send_message_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btn_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_message_accent_24dp"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:padding="16dp"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:id="@+id/send_message_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reply_via_message"
+                android:layout_toRightOf="@+id/btn_message"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    
+</android.support.v7.widget.CardView>
